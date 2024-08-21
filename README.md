@@ -2,28 +2,31 @@ PÁGINA EM CONSTRUÇÃO
 
 # rRocket-Monitor 🚀 
 
-Sistema para teste em bancada do computador de bordo [rRocket](https://github.com/gbertoldo/rRocket).
+Sistema para testes em bancada de computador de bordo [rRocket](https://github.com/gbertoldo/rRocket). Composto por uma câmara de volume variável e instrumentada, permite submeter o altímetro a um ambiente de pressão controlada, enquanto se monitora a tensão nos termanais da bateria que o alimenta e nos terminais dos paraquedas auxiliar e principal. O sistema permite ainda acionar acionar ignitores externamente à câmara. Deste modo, é possível simular voo reais e verificar o funcionamento de _software_ e _hardware_ do computador de bordo.
 
 # Versão
 Versão 1.0.0
 
 # Hardware
-Desenvolvido com o propósito de redução de custos, o hardware do rRocket é formado por componentes eletrônicos facilmente disponíveis no mercado. Em função disso, o computador de bordo pode ser montado por qualquer pessoa com conhecimento básico de soldagem. A figura abaixo ilustra a PCI (placa de circuito impresso) do rRocket modelo EZ, ou, simplesmente, rRocket-EZ, e a figura seguinte ilustra um rRocket-EZ montado. 
 
+## Câmara
+A câmara do rRocket-Monitor pode ser construída de diversas maneiras. No exemplo apresentado aqui (vide a figura abaixo), priorizou-se a utilização de materiais baratos e de fácil acesso. A câmara é formada por uma garrafa d'água e uma seringa de 60 mL. A seringa foi fixa na tampa da garrafa com cola quente. Através da tampa, passam os fios para instrumentação.
+
+## Eletrônica
 <center>
 <picture>
 <img src="https://github.com/user-attachments/assets/079dafb8-f03c-4934-8827-462ed0c98f62" width="300" />
 </picture>
 
-Lista de componentes eletrônicos
+### Lista de componentes eletrônicos
 --------------------------------
 - Placa principal :todo:
 - Arduino Nano
 - Módulo BMP280
 - R1 a R5: resistor 2200 ohms (1/4 W)
 - R6 a R10: resistor 6800 ohms (1/4 W)
-- Chave: chave gangorra (KCD11)
-- Conector: conector para bateria 6LR61 (9V)
+- Chave: chave gangorra (KCD11-101)
+- Conector: conector clip para bateria 6LR61 (9V)
 
 ⚠️ Recomenda-se testar cada componente separadamente antes de realizar a soldagem na placa principal.
 
