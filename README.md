@@ -10,7 +10,12 @@ Versão 1.0.0
 # Hardware
 
 ## Câmara
-A câmara do rRocket-Monitor pode ser construída de diversas maneiras. No exemplo apresentado aqui (vide a figura abaixo), priorizou-se a utilização de materiais baratos e de fácil acesso. A câmara é formada por uma garrafa d'água hermética e uma seringa de 60 mL. Há dois orifícios na tampa da garrafa para a passagem da ponta da seringa e dos fios de instrumentação. Utiliza-se cola quente para vedar os orifícios. Próximo à tampa, encontra-se o sensor BMP280 para registro de pressão (e altura, consequentemente). Os dados coletados por este sensor são usados para posterior comparação com os dados do rRocket. Além disso, há três pares de fios que são ligados ao rRocket: (a) um par para alimentação de energia, (b) outro par para o terminal de paraquedas auxiliar e (c) o último par para o terminal de paraquedas principal.
+A câmara do rRocket-Monitor pode ser construída de diversas maneiras. No exemplo apresentado aqui (vide a figura abaixo), priorizou-se a utilização de materiais baratos e de fácil acesso. 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/b14b1547-0e8a-436f-ae93-48b47a230b81" width=600>
+</p> 
+
+A  câmara é formada por uma garrafa d'água hermética e uma seringa de 60 mL. Há dois orifícios na tampa da garrafa para a passagem da ponta da seringa e dos fios de instrumentação. Utiliza-se cola quente para vedar os orifícios. Próximo à tampa, encontra-se o sensor BMP280 para registro de pressão (e altura, consequentemente). Os dados coletados por este sensor são usados para posterior comparação com os dados do rRocket. Além disso, há três pares de fios que são ligados ao rRocket: (a) um par para alimentação de energia, (b) outro par para o terminal de paraquedas auxiliar e (c) o último par para o terminal de paraquedas principal.
 
 ## Eletrônica
 Os 10 fios de instrumentação da câmara são ligados à placa de circuito impresso (PCI) ilustrada abaixo
