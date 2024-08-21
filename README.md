@@ -55,7 +55,7 @@ Procedimento de carregamento de _firmware_
 ------------------------------------------
 1. Baixe e instale o [Visual Studio Code/VSCode](https://code.visualstudio.com/);
 1. No VSCode, instale o _plugin_ PlatformIO;
-1. Baixe e descompacte a [última versão](https://github.com/gbertoldo/rRocket/tags) TODO do código-fonte;
+1. Baixe e descompacte a [última versão](https://github.com/gbertoldo/rRocket-Monitor/tags) do código-fonte;
 1. Abra o diretório do código-fonte com o VSCode;
 1. Compile o código e carregue o _firmware_ clicando em _PlatformIO_ :arrow_right: _nanoatmega328_ :arrow_right: _General_ :arrow_right: _Upload_;
 
