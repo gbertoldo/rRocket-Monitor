@@ -9,31 +9,35 @@ Versão 1.0.0
 
 # Hardware
 
-## Câmara
-A câmara do rRocket-Monitor pode ser construída de diversas maneiras. No exemplo apresentado aqui (vide a figura abaixo), priorizou-se a utilização de materiais baratos e de fácil acesso. 
+O _hardware_ do rRocket-Monitor pode ser construído de diversas maneiras. No exemplo apresentado aqui (vide a figura abaixo), priorizou-se a utilização de materiais baratos e de fácil acesso. 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/b14b1547-0e8a-436f-ae93-48b47a230b81" width=600>
 </p> 
 
-A  câmara é formada por uma garrafa d'água hermética e uma seringa de 60 mL. Há dois orifícios na tampa da garrafa para a passagem da ponta da seringa e dos fios de instrumentação. Utiliza-se cola quente para vedar os orifícios. Próximo à tampa, encontra-se o sensor BMP280 para registro de pressão (e altura, consequentemente). Os dados coletados por este sensor são usados para posterior comparação com os dados do rRocket. Além disso, há três pares de fios que são ligados ao rRocket: (a) um par para alimentação de energia, (b) outro par para o terminal de paraquedas auxiliar e (c) o último par para o terminal de paraquedas principal.
+A  câmara é formada por uma garrafa d'água hermética e uma seringa de 60 mL. Há dois orifícios na tampa da garrafa para a passagem da ponta da seringa e dos fios de instrumentação. Utiliza-se cola quente para vedar os orifícios. Próximo à tampa, encontra-se o sensor BMP280 para registro de pressão (e altura, consequentemente). 
 
-## Eletrônica
-Os 10 fios de instrumentação da câmara são ligados à placa de circuito impresso (PCI) ilustrada abaixo
-<center>
-<picture>
-<img src="https://github.com/user-attachments/assets/079dafb8-f03c-4934-8827-462ed0c98f62" width="300" />
-</picture>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/f58a292a-8bf9-453f-b4df-fff2b0bfb28e" width=300>
+</p> 
+Os dados coletados por este sensor são usados para posterior comparação com os dados do rRocket. Além disso, há três pares de fios que são ligados ao rRocket no interior da câmara: (a) um par para alimentação de energia (bateria), (b) outro par para o terminal de paraquedas auxiliar e (c) o último par para o terminal de paraquedas principal.
+
+Os 10 fios de instrumentação oriundos da câmara são ligados à placa de circuito impresso (PCI) ilustrada abaixo
+<p align="center">
+<img src="https://github.com/user-attachments/assets/079dafb8-f03c-4934-8827-462ed0c98f62" width=300>
+</p> 
    
-Os quatro fios do sensor BMP280 são soldados aos respectivos orifícios da placa. O par de fios para alimentar o rRocket é ligado aos orifícios GND e B (positivo) da placa. O par de fios do paraquedas auxiliar deve ser ligado aos orifícios D+ e D- da placa. O par de fios do paraquedas principal deve ser ligado aos orifícios P+ e P- da placa. A ordem da ligação de D+ e D- não é relevante. O mesmo se aplica para P+ e P-. Além dos fios oriundos da câmara, também são ligados na PCI uma chave do tipo gangorra para ligar/desligar o rRocket, um conector tipo clip para a bateria de 9V, resistores de 2200 ohms (R1 a R5) e 6800 ohms (R6 a R10) e um Arduino Nano.
+Os quatro fios do sensor BMP280 são soldados aos respectivos orifícios da placa. O par de fios para alimentar o rRocket é ligado aos orifícios GND e B (positivo) da placa. O par de fios do paraquedas auxiliar deve ser ligado aos orifícios D+ e D- da placa. O par de fios do paraquedas principal deve ser ligado aos orifícios P+ e P- da placa. A ordem da ligação de D+ e D- não é relevante. O mesmo se aplica para P+ e P-. Nos orifícios dos paraquedas auxiliar e principal também são soldados os fios que servem como extensões para o acionamento dos ignitores elétricos (squibs). Na ponta desses fios há terminais do tipo jacaré. 
 
-O projeto elétrico do circuito está disponível no site da EasyEDA TODO. A partir deste site é possível comprar a placa (sem os componentes montados) ou baixar gratuitamente os arquivos Gerber e produzi-la de outra forma.
+Além dos fios oriundos da câmara, também são ligados na PCI uma chave do tipo gangorra para ligar/desligar o rRocket, um conector tipo clip para a bateria de 9V, resistores de 2200 ohms (R1 a R5) e 6800 ohms (R6 a R10) e um Arduino Nano.
+
+O projeto elétrico do circuito está disponível no site da [EasyEDA](https://oshwlab.com/glbertoldo/rrocket-instrumentation). A partir deste site é possível comprar a placa (sem os componentes montados) ou baixar gratuitamente os arquivos Gerber e produzi-la de outra forma.
 
 ⚠️ Os autores não tem qualquer relação comercial com a EasyEDA. Os usuários devem se sentir livres para escolher a forma que melhor lhes convir para a produção da PCI.
 
 
-### Lista de componentes eletrônicos
+Lista de componentes eletrônicos
 --------------------------------
-- Placa principal TODO
+- PCI
 - Arduino Nano
 - Módulo BMP280
 - R1 a R5: resistor 2200 ohms (1/4 W)
@@ -43,9 +47,7 @@ O projeto elétrico do circuito está disponível no site da EasyEDA TODO. A par
 
 ⚠️ Recomenda-se testar cada componente separadamente antes de realizar a soldagem na placa principal.
 
-## Caixa de proteção
-
-É recomendável proteger o circuito em uma caixa plástica. Neste [link](https://github.com/gbertoldo/rRocket-Monitor/tree/master/src) TODO é possível encontrar os arquivos STL para impressão 3D da caixa de proteção utilizada neste projeto. 
+É recomendável proteger o circuito em uma caixa plástica. Neste [link](https://github.com/gbertoldo/rRocket-Monitor/tree/master/stl) é possível encontrar os arquivos STL para impressão 3D da caixa de proteção utilizada neste projeto. 
 
 # Firmware
 
