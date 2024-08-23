@@ -1,11 +1,9 @@
-PÁGINA EM CONSTRUÇÃO
-
 # rRocket-Monitor 🚀 
 
 Sistema para testes em bancada de computador de bordo [rRocket](https://github.com/gbertoldo/rRocket). Composto por uma câmara de volume variável e instrumentada, permite submeter o altímetro a um ambiente de pressão controlada, enquanto se monitora a tensão nos termanais da bateria que alimenta o altímetro e nos terminais dos paraquedas auxiliar e principal. O sistema permite, ainda, acionar ignitores externos à câmara. Deste modo, é possível simular voo reais e verificar o funcionamento de _software_ e _hardware_ do computador de bordo. Para facilitar a visualização e análise dos dados, o sistema é acompanhado pela interface gráfica [rRocket-Monitor-UI](https://github.com/gbertoldo/rRocket-Monitor-UI). Vídeos deste sistema estão disponíveis no YouTube TODO.
 
 # Versão
-Versão 1.0.0
+Versão 1.0.1
 
 # Hardware
 
