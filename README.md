@@ -1,11 +1,9 @@
-PÁGINA EM CONSTRUÇÃO
-
 # rRocket-Monitor 🚀 
 
 Sistema para testes em bancada de computador de bordo [rRocket](https://github.com/gbertoldo/rRocket). Composto por uma câmara de volume variável e instrumentada, permite submeter o altímetro a um ambiente de pressão controlada, enquanto se monitora a tensão nos termanais da bateria que alimenta o altímetro e nos terminais dos paraquedas auxiliar e principal. O sistema permite, ainda, acionar ignitores externos à câmara. Deste modo, é possível simular voo reais e verificar o funcionamento de _software_ e _hardware_ do computador de bordo. Para facilitar a visualização e análise dos dados, o sistema é acompanhado pela interface gráfica [rRocket-Monitor-UI](https://github.com/gbertoldo/rRocket-Monitor-UI). Vídeos deste sistema estão disponíveis no YouTube TODO.
 
 # Versão
-Versão 1.0.0
+Versão 1.0.1
 
 # Hardware
 
@@ -55,7 +53,7 @@ Procedimento de carregamento de _firmware_
 ------------------------------------------
 1. Baixe e instale o [Visual Studio Code/VSCode](https://code.visualstudio.com/);
 1. No VSCode, instale o _plugin_ PlatformIO;
-1. Baixe e descompacte a [última versão](https://github.com/gbertoldo/rRocket/tags) TODO do código-fonte;
+1. Baixe e descompacte a [última versão](https://github.com/gbertoldo/rRocket-Monitor/tags) do código-fonte;
 1. Abra o diretório do código-fonte com o VSCode;
 1. Compile o código e carregue o _firmware_ clicando em _PlatformIO_ :arrow_right: _nanoatmega328_ :arrow_right: _General_ :arrow_right: _Upload_;
 
