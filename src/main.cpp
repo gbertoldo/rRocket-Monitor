@@ -31,6 +31,8 @@ void setup() {
   
   // Initializing the barometer
   barometer.begin();
+
+  Serial.println("<2,rRocketMonitor-v1.0.1>");
 }
 
 void loop() {
@@ -49,7 +51,7 @@ void loop() {
   Serial.print(",");
   Serial.print(ddpD); // Voltage through the drogue terminal (V)
   Serial.print(",");
-  Serial.println(ddpP); // Voltage through the parachute terminal (V)
-  Serial.print(">");
+  Serial.print(ddpP); // Voltage through the parachute terminal (V)
+  Serial.println(">");
 
 }
